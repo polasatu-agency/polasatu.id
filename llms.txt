@@ -1,6 +1,6 @@
 # Pola Satu
 
-> Jasa pembuatan website untuk UMKM dan bisnis lokal di Tangerang dan BSD (Gading Serpong, Banten, Indonesia). For good local businesses that customers cannot find on Google. Websites go live in 7 working days, the copy is written for the client, and visitors chat directly via WhatsApp. If delivery is late, Pola Satu deducts Rp500.000 per working day from the final payment.
+> Jasa pembuatan website untuk UMKM dan bisnis lokal di seluruh Indonesia, based in Gading Serpong (Tangerang, Banten). For good local businesses that customers cannot find on Google. Works with clients anywhere in Indonesia via WhatsApp and phone; in-person meetings possible in Jabodetabek. Websites go live in 7 working days, the copy is written for the client, and visitors chat directly via WhatsApp. If delivery is late, Pola Satu deducts Rp500.000 per working day from the final payment.
 
 Domain note: https://polasatu.id is a placeholder until the final domain is confirmed.
 
@@ -26,3 +26,15 @@ Run by Ryco, management graduate (branding concentration) from Universitas Prase
 - WhatsApp: 0897-0058-075 (https://wa.me/628970058075)
 - Email: polasatuagency@gmail.com
 - Instagram: https://instagram.com/polasatu.id
+
+## Pages
+- [Biaya pembuatan website untuk usaha kecil, dirinci satu per satu](https://polasatu.id/artikel/biaya-bikin-website-usaha-kecil/): Apa saja yang membentuk biaya pembuatan website bisnis: domain, hosting, SSL, desain, teks, perpanjangan tahunan, dan hal yang perlu ditanyakan ke penyedia.
+- [Cara agar bisnis Anda muncul di Google Maps](https://polasatu.id/artikel/cara-agar-bisnis-muncul-di-google-maps/): Profil Bisnis Google itu gratis. Panduan membuat, memverifikasi, dan mengisi profil agar bisnis Anda lebih mudah muncul di Google Maps dan pencarian Google.
+- [Bikin website gratis atau berbayar: mana yang cocok untuk usaha Anda](https://polasatu.id/artikel/website-gratis-vs-berbayar/): Bikin website gratis atau bayar orang? Perbandingan soal alamat, iklan, waktu, kepemilikan, dan peluang ditemukan di Google, plus kapan gratis sudah cukup.
+- [Harga pembuatan website: apa yang menentukan dan berapa di Pola Satu](https://polasatu.id/harga-pembuatan-website/): Berapa harga pembuatan website? Pahami apa yang menentukan biaya, lalu lihat harga Pola Satu: paket Launch Rp1.990.000, paket Flagship Rp6.990.000.
+- [Jasa pembuatan website Jakarta untuk usaha yang bersaing di Google Maps](https://polasatu.id/jasa-pembuatan-website-jakarta/): Jasa pembuatan website Jakarta Selatan, Barat, Timur, dan sekitarnya. Website dan profil Google Maps yang rapi, dikerjakan langsung oleh pembuatnya.
+- [Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya](https://polasatu.id/jasa-pembuatan-website-tangerang/): Jasa pembuatan website Tangerang dari web developer lokal di Gading Serpong. Anda bicara langsung dengan orang yang membuatnya, lewat WhatsApp atau telepon.
+- [Jasa pembuatan website Tangerang Selatan untuk usaha yang ingin ditemukan](https://polasatu.id/jasa-pembuatan-website-tangerang-selatan/): Jasa pembuatan website Tangerang Selatan untuk usaha di Serpong, BSD, Pamulang, Ciputat, dan Bintaro. Dikerjakan langsung oleh Ryco dari Gading Serpong.
+- [Website klinik yang jelas, dari layanan sampai jadwal praktik](https://polasatu.id/website-klinik/): Website klinik kecantikan, gigi, atau pratama yang jelas: layanan dan harga, jadwal praktik, lokasi di Google Maps, dan booking lewat WhatsApp.
+- [Website restoran sederhana untuk usaha makanan](https://polasatu.id/website-restoran/): Website restoran untuk usaha makanan: menu dan harga, foto, jam buka, lokasi, dan pesan lewat WhatsApp. Kapan paket Launch cukup, kapan paket Flagship.
+- [Website UMKM: kenapa perlu, apa isinya, dan cara memulainya](https://polasatu.id/website-umkm/): Website UMKM untuk pemilik usaha yang belum pernah punya website: manfaatnya, isi yang dibutuhkan, dan cara mulai dari paket Launch atau paket Flagship.
