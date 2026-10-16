@@ -1,0 +1,9 @@
+# robots.txt for Pola Satu
+# Swap https://polasatu.id for the final domain before launch.
+# AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.) are allowed by the
+# wildcard rule below; see /llms.txt for a plain-text summary.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://polasatu.id/sitemap.xml
