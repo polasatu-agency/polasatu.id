@@ -161,10 +161,15 @@
  ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Jost:wght@300;400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap">
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 300 400; font-display: swap; src: url("/assets/fonts/jost.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("/assets/fonts/plus-jakarta-sans.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Comfortaa"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/comfortaa.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Jost fallback"; src: local("Roboto"), local("Arial"); size-adjust: 97%; ascent-override: 110%; descent-override: 39%; line-gap-override: 0%; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Jakarta fallback"; src: local("Roboto"), local("Arial"); size-adjust: 104.4%; ascent-override: 99%; descent-override: 21%; line-gap-override: 0%; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Comfortaa fallback"; src: local("Roboto"), local("Arial"); size-adjust: 118%; ascent-override: 75%; descent-override: 20%; line-gap-override: 0%; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 /* Layout: one offer on warm paper. Ink bands mark the quote, the recommended price and the closing. The diamond is the only motif: bullets, numbers, timeline and active states. */
 :root {
   color-scheme: light;
@@ -174,9 +179,9 @@
   --dark: #141414; --dark-surface: #1F1F1F; --on-dark: #F3EFE9; --on-dark-muted: #A9A49D; --on-dark-line: #3A3835; --nila-on-dark: #B7C0EE;
   --wa: #25D366; --white: #FFFFFF; --error: #A3341F;
 
-  --f-head: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
-  --f-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-mark: "Comfortaa", "Jost", sans-serif;
+  --f-head: "Jost", "Jost fallback", "Futura", "Century Gothic", system-ui, sans-serif;
+  --f-body: "Plus Jakarta Sans", "Jakarta fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mark: "Comfortaa", "Comfortaa fallback", "Jost", sans-serif;
 
   --fs-display: clamp(2.25rem, 1.25rem + 4.6vw, 5rem);
   --fs-h2: clamp(1.75rem, 1.3rem + 1.9vw, 2.75rem);
@@ -190,7 +195,7 @@
   --ease-standard: cubic-bezier(.2, 0, 0, 1); --ease-out: cubic-bezier(.16, 1, .3, 1);
 }
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; scroll-padding-bottom: 88px; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
   font-family: var(--f-body); font-size: var(--fs-body); line-height: 1.65;
@@ -261,13 +266,13 @@ main:focus { outline: none; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* nav */
-.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--paper); transition: box-shadow var(--dur-base); }
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 70; background: var(--paper); transition: box-shadow var(--dur-base); }
 .nav.is-scrolled { box-shadow: var(--shadow-float); }
 .nav-in { display: flex; align-items: center; gap: 24px; min-height: 72px; }
 .lockup { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; flex: none; }
 .lockup svg { height: 30px; width: auto; }
 .wordmark { display: inline-block; height: 21px; aspect-ratio: 436 / 94; background: currentColor;
-  -webkit-mask: url("/assets/wordmark.png") center / contain no-repeat; mask: url("/assets/wordmark.png") center / contain no-repeat; }
+  -webkit-mask: url("/assets/wordmark.webp") center / contain no-repeat; mask: url("/assets/wordmark.webp") center / contain no-repeat; }
 .nav-links { display: flex; gap: 26px; margin-left: auto; }
 .nav-links a { color: var(--ink); text-decoration: none; font-size: var(--fs-small); font-weight: 500; position: relative; padding-block: 6px; }
 .nav-links a::after { content: ""; position: absolute; left: 50%; bottom: -4px; width: 6px; height: 6px; background: var(--nila); transform: translateX(-50%) rotate(45deg) scale(0); transition: transform var(--dur-base) var(--ease-out); }
@@ -283,6 +288,7 @@ main:focus { outline: none; }
 .mobile-menu a:not(.btn) { display: block; padding: 12px 0; color: var(--ink); text-decoration: none; font-family: var(--f-head); font-size: 1.375rem; }
 .mobile-menu .btn { margin-top: 12px; width: 100%; }
 @media (min-width: 901px) { .mobile-menu { display: none; } }
+@media (max-width: 900px) { .mobile-menu { max-height: calc(100vh - 72px); max-height: calc(100dvh - 72px); overflow-y: auto; overscroll-behavior: contain; } }
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
   .menu-btn { display: inline-block; }
@@ -382,7 +388,6 @@ main:focus { outline: none; }
 .payback { margin-top: clamp(40px, 5vw, 64px); display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(20px, 4vw, 56px); padding: clamp(24px, 3.4vw, 44px); background: var(--nila-tint); }
 .payback-head { display: grid; gap: 10px; align-content: start; }
 .payback-head .eyebrow { color: var(--ink); }
-.payback-head h3 { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); font-weight: 300; line-height: 1.1; }
 .payback-body { display: grid; gap: 14px; min-width: 0; }
 .payback-head .promise-big b { font-size: clamp(4rem, 3rem + 4vw, 6.5rem); }
 .calc { font-family: var(--f-body); font-weight: 400; font-size: var(--fs-lead); line-height: 1.55; max-width: 60ch; font-variant-numeric: tabular-nums; }
@@ -397,6 +402,9 @@ main:focus { outline: none; }
 .pb-choice span:hover { border-color: var(--ink); }
 .pb-choice input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .pb-choice input:focus-visible + span { outline: 2px solid var(--nila); outline-offset: 2px; }
+.pb-other { display: inline-flex; align-items: center; gap: 10px; }
+.pb-other-label { font-size: 0.9375rem; }
+.pb-hint { font-size: var(--fs-small); color: var(--muted); }
 .pb-other input[type="text"] { width: 230px; max-width: 100%; min-height: 44px; padding: 10px 14px; font-size: 0.9375rem; }
 @media (max-width: 760px) { .payback { grid-template-columns: 1fr; } }
 
@@ -504,14 +512,14 @@ p, li { text-wrap: pretty; }
 .crumbs [aria-current] { flex: 1 1 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .page-hero { padding-block: clamp(24px, 4vw, 56px) clamp(48px, 7vw, 96px); }
 .page-hero .wrap { display: grid; gap: clamp(16px, 2vw, 28px); }
-.page-hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+.page-hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
 .page-hero-grid > :only-child { grid-column: 1 / -1; }
 .page-hero-copy { display: grid; gap: 22px; align-content: start; min-width: 0; }
 .page-hero-copy > .eyebrow { margin-bottom: -6px; }
 .page-hero h1 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.25rem); font-weight: 300; line-height: 1.05; letter-spacing: -0.02em; max-width: 22ch; }
 .page-hero .lead { max-width: 54ch; }
 .page-hero .chips { margin-top: 2px; }
-.page-meta { font-family: var(--f-mark); font-weight: 600; font-size: var(--fs-label); letter-spacing: .04em; color: var(--muted); margin-top: -8px; text-transform: lowercase; }
+.page-meta { font-family: var(--f-mark); font-weight: 600; font-size: var(--fs-label); letter-spacing: .04em; color: var(--muted); margin-top: -8px; }
 .page-toc { background: var(--surface); padding: clamp(24px, 3vw, 36px); display: grid; gap: 20px; align-self: start; min-width: 0; }
 .page-toc ol { display: grid; gap: 2px; counter-reset: t; }
 .page-toc li { counter-increment: t; }
@@ -522,7 +530,7 @@ p, li { text-wrap: pretty; }
 .byline img { width: 56px; height: 56px; flex: none; object-fit: cover; background: var(--logo-grey); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
 .byline p { display: grid; font-size: var(--fs-small); line-height: 1.4; color: var(--muted); }
 .byline b { color: var(--ink); font-weight: 600; }
-@media (max-width: 900px) { .page-hero-grid { grid-template-columns: 1fr; } .page-hero .promise, .page-toc { max-width: 520px; } }
+@media (max-width: 900px) { .page-hero-grid { grid-template-columns: 1fr; } .page-hero .promise, .page-toc, .prices { max-width: none; } }
 .page-body { padding-bottom: var(--section-y); }
 .prose { max-width: 41rem; display: block; }
 .prose > * + * { margin-top: 20px; }
@@ -538,11 +546,19 @@ p, li { text-wrap: pretty; }
 .prose ol > li::before { content: counter(n, decimal-leading-zero); position: absolute; left: 0; top: 0; font: 600 var(--fs-label)/calc(var(--fs-body) * 1.65) var(--f-mark); color: var(--muted); font-variant-numeric: tabular-nums; }
 .prose a:not(.btn), .who a { color: var(--nila); }
 .table-wrap { overflow-x: auto; }
-.compare { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.5; }
+.compare { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.5; }
 .compare th, .compare td { text-align: left; vertical-align: top; padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); }
 .compare thead th { font-family: var(--f-mark); font-weight: 600; font-size: var(--fs-label); letter-spacing: .04em; text-transform: lowercase; color: var(--muted); border-bottom-color: var(--line-strong); }
-.compare tbody th { font-weight: 600; color: var(--ink); width: 28%; }
-.who { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; align-items: start; padding: 20px; background: var(--surface); margin-block: 40px 0; max-width: 41rem; }
+.compare tbody th { font-weight: 600; color: var(--ink); }
+.compare thead th:first-child { width: 26%; }
+@media (max-width: 560px) {
+  .compare thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .compare tr { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); }
+  .compare th, .compare td { display: block; padding: 0; border: 0; }
+  .compare tbody th { grid-column: 1 / -1; margin-bottom: 6px; }
+  .compare td::before { content: attr(data-label); display: block; font-family: var(--f-mark); font-weight: 600; font-size: var(--fs-label); letter-spacing: .04em; text-transform: lowercase; color: var(--muted); margin-bottom: 2px; }
+}
+.who { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; align-items: start; padding: 20px; background: var(--surface); margin-block: 40px 0; }
 .who img { display: block; width: 64px; height: 64px; object-fit: cover; }
 .who p { margin: 0; font-size: var(--fs-small); line-height: 1.6; }
 .page-block { margin-block: 24px 56px; }
@@ -556,7 +572,7 @@ p, li { text-wrap: pretty; }
 .art-card { display: grid; grid-template-rows: auto auto 1fr auto; gap: 12px; padding: clamp(20px, 2.4vw, 28px); background: var(--surface); color: var(--ink); text-decoration: none; border: 1px solid transparent; transition: border-color var(--dur-base); }
 .art-card:hover { border-color: var(--line-strong); }
 .art-card .eyebrow { text-transform: lowercase; }
-.art-card h3 { font-size: clamp(1.1875rem, 1.05rem + 0.4vw, 1.375rem); line-height: 1.25; }
+.art-card h2, .art-card h3 { font-size: clamp(1.1875rem, 1.05rem + 0.4vw, 1.375rem); line-height: 1.25; }
 .art-card p:not(.eyebrow) { color: var(--muted); font-size: 0.9375rem; line-height: 1.55; }
 .art-card .more { color: var(--nila); font-weight: 600; font-size: 0.9375rem; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .art-card:hover .more { text-decoration-thickness: 2px; }
@@ -608,7 +624,7 @@ p, li { text-wrap: pretty; }
   .payback { padding: 20px; gap: 16px; margin-top: 32px; }
   .pb-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
   .pb-choice span { width: 100%; justify-content: center; padding: 10px 4px; font-size: 0.8125rem; }
-  .pb-other { grid-column: 1 / -1; }
+  .pb-other { grid-column: 1 / -1; display: grid; gap: 6px; }
   .pb-other input[type="text"] { width: 100%; }
   .calc { font-size: 1rem; }
   .steps { row-gap: 24px; }
@@ -626,6 +642,7 @@ p, li { text-wrap: pretty; }
   .pb-choice input:checked + span { outline: 3px solid Highlight; outline-offset: -3px; }
   .menu-btn span, .menu-btn span::before, .menu-btn span::after, .faq-list .pm::before, .faq-list .pm::after, .wordmark { forced-color-adjust: none; background: CanvasText; }
   .menu-btn[aria-expanded="true"] span { background: transparent; }
+  .promise-big b { line-height: 1.2; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -667,7 +684,7 @@ p, li { text-wrap: pretty; }
 </header>
 
 <main id="main" tabindex="-1">
-<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Beranda</a> <span aria-hidden="true">›</span> <span aria-current="page">Jasa website Tangerang</span></nav><div class="page-hero-grid"><div class="page-hero-copy"><p class="eyebrow">tangerang · web developer lokal</p><h1>Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya</h1><p class="lead">Di Pola Satu, yang Anda ajak bicara adalah Ryco, orang yang juga membangun website Anda, dari Gading Serpong. Tanpa perantara, cukup WhatsApp atau telepon.</p><div class="cta-row"><a class="btn btn-wa" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya punya usaha di Tangerang dan ingin tanya soal website."><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya dulu via WhatsApp<span class="sr-only"> (buka tab baru)</span></a><a class="btn btn-ghost" href="#paket">Lihat harga <span class="arrow" aria-hidden="true">→</span></a></div><ul class="chips">
+<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Lokasi halaman"><a href="/">Beranda</a> <span aria-hidden="true">›</span> <span aria-current="page">Jasa website Tangerang</span></nav><div class="page-hero-grid"><div class="page-hero-copy"><p class="eyebrow">tangerang · web developer lokal</p><h1>Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya</h1><p class="lead">Di Pola Satu, yang Anda ajak bicara adalah Ryco, orang yang juga membangun website Anda, dari Gading Serpong. Tanpa perantara, cukup WhatsApp atau telepon.</p><div class="cta-row"><a class="btn btn-wa" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya punya usaha di Tangerang dan ingin tanya soal website."><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya dulu via WhatsApp<span class="sr-only"> (buka tab baru)</span></a><a class="btn btn-ghost" href="#paket">Lihat harga <span class="arrow" aria-hidden="true">→</span></a></div><ul class="chips">
         <li><i class="dot" aria-hidden="true"></i>Mulai Rp1.990.000</li>
         <li><i class="dot" aria-hidden="true"></i>Domain, hosting &amp; SSL tahun pertama termasuk</li>
         <li><i class="dot" aria-hidden="true"></i>Dikerjakan langsung oleh Ryco</li>
@@ -682,7 +699,7 @@ p, li { text-wrap: pretty; }
         <li><span class="dnum" aria-hidden="true">7</span><p><b>hari 7</b><span>Live</span></p></li>
       </ol>
       <p class="promise-foot"><span>Setiap telat 1 hari kerja, kami potong Rp500.000 dari pelunasan.</span></p>
-    </aside></div></div></section><section class="page-body"><div class="wrap"><div class="prose"><p>Banyak pemilik usaha di Tangerang ragu memesan website karena satu hal: takut repot. Takut harus menjelaskan bisnisnya berkali-kali ke orang yang berbeda, lalu hasilnya tetap tidak sesuai. Di Pola Satu, caranya sederhana: satu orang yang mendengar cerita usaha Anda, membangun websitenya, dan membalas pesan Anda.</p><h2 id="web-developer-tangerang-atau-agensi-besar">Web developer Tangerang atau agensi besar</h2><p>Agensi besar punya kelebihan. Mereka punya tim, bisa menangani proyek yang rumit, dan cocok untuk perusahaan yang butuh banyak fitur. Tapi untuk usaha lokal, alurnya sering terasa panjang. Anda bicara dengan bagian penjualan, lalu dengan project manager, lalu menunggu desainer dan programmer yang tidak pernah Anda temui.</p><p>Dengan web developer lokal yang bekerja sendiri, alurnya pendek:</p><ul class="bullets"><li><span>Orang yang Anda telepon di hari pertama adalah orang yang mengerjakan website Anda.</span></li><li><span>Pertanyaan Anda dijawab oleh orang yang tahu persis isi websitenya.</span></li><li><span>Masukan revisi tidak perlu diteruskan lewat beberapa orang.</span></li><li><span>Harganya sudah tertulis di depan, dalam dua paket yang sama untuk semua klien.</span></li></ul><p>Kekurangannya juga perlu Anda tahu: satu orang tidak bisa mengerjakan proyek raksasa. Karena itu kami hanya menawarkan dua paket yang jelas batasnya, untuk UMKM dan usaha lokal.</p><h2 id="bekerja-lewat-whatsapp-dan-telepon">Bekerja lewat WhatsApp dan telepon</h2><p>Pemilik usaha biasanya sibuk melayani pelanggan, bukan duduk di depan laptop. Jadi cara kerja kami mengikuti itu.</p><p>Semua dimulai dengan telepon 30 menit di hari pertama, gratis dan tanpa komitmen. Kita bicara tentang usaha Anda, layanan apa yang paling sering ditanyakan pelanggan, dan siapa pelanggan Anda. Kalau ada logo dan foto, kirim saja lewat WhatsApp.</p><p>Anda tidak perlu menyiapkan dokumen panjang atau belajar istilah teknis. Di paket Flagship, cerita Anda di telepon itulah bahan utama teks website. Di paket Launch, teksnya Anda siapkan, kami yang memasangnya.</p><p>Untuk paket Flagship, di hari ke-3 Anda melihat draft. Masukan cukup dikirim lewat WhatsApp dengan kalimat Anda sendiri, dan revisi tidak dibatasi sampai hari ke-6. Di hari ke-7, website live, profil Google Maps dirapikan, dan tombol WhatsApp aktif. Paket Launch live dalam 3 hari kerja dengan 2 kali revisi. Urutan lengkapnya ada di <a href="/#proses">proses kerja</a>.</p><h2 id="melayani-kota-dan-kabupaten-tangerang">Melayani Kota dan Kabupaten Tangerang</h2><p>Kami bekerja dari Gading Serpong, di Kelapa Dua, Kabupaten Tangerang. Kami melayani usaha di Karawaci, Cipondoh, Cikokol, dan Batuceper di Kota Tangerang, juga di Kelapa Dua, Pagedangan, Cisauk, Cikupa, Curug, dan Legok di Kabupaten Tangerang. Di luar Tangerang, kami bekerja dengan klien di seluruh Indonesia. Untuk usaha di ibu kota, ada halaman <a href="/jasa-pembuatan-website-jakarta/">jasa pembuatan website Jakarta</a>.</p><p>Kalau usaha Anda di Serpong, BSD, atau Pamulang, halaman <a href="/jasa-pembuatan-website-tangerang-selatan/">jasa pembuatan website Tangerang Selatan</a> membahas pencarian lokal di sana lebih dalam.</p><p>Ingin melihat hasil kerja nyata? Lihat <a href="/#contoh">contoh website</a> yang kami buat untuk PT. Mutiara Citramulia Teknindo, distributor resmi Pneumax di Indonesia. Ada 9 lini produk, pertanyaan produk langsung lewat WhatsApp, dan dua bahasa.</p><h2 id="paket-dan-harga">Paket dan harga</h2></div><aside class="who" aria-label="Siapa yang mengerjakan"><img src="/assets/ryco-160.jpg" alt="Ryco, pendiri Pola Satu" width="64" height="64" loading="lazy" decoding="async"><p><b>Dikerjakan langsung oleh Ryco</b> dari Gading Serpong. Anda bicara dengan orang yang sama dari telepon pertama sampai website live. Melayani usaha di seluruh Indonesia lewat WhatsApp dan telepon, dan bisa bertemu langsung di Jabodetabek. Contoh yang sudah live: <a href="https://pneumaxmct.com" target="_blank" rel="noopener">pneumaxmct.com</a>.</p></aside><div class="page-block" id="paket"><div class="prices">
+    </aside></div></div></section><section class="page-body"><div class="wrap"><div class="prose"><p>Banyak pemilik usaha di Tangerang ragu memesan website karena satu hal: takut repot. Takut harus menjelaskan bisnisnya berkali-kali ke orang yang berbeda, lalu hasilnya tetap tidak sesuai. Di Pola Satu, caranya sederhana: satu orang yang mendengar cerita usaha Anda, membangun websitenya, dan membalas pesan Anda.</p><h2 id="web-developer-tangerang-atau-agensi-besar">Web developer Tangerang atau agensi besar</h2><p>Agensi besar punya kelebihan. Mereka punya tim, bisa menangani proyek yang rumit, dan cocok untuk perusahaan yang butuh banyak fitur. Tapi untuk usaha lokal, alurnya sering terasa panjang. Anda bicara dengan bagian penjualan, lalu dengan project manager, lalu menunggu desainer dan programmer yang tidak pernah Anda temui.</p><p>Dengan web developer lokal yang bekerja sendiri, alurnya pendek:</p><ul class="bullets"><li><span>Orang yang Anda telepon di hari pertama adalah orang yang mengerjakan website Anda.</span></li><li><span>Pertanyaan Anda dijawab oleh orang yang tahu persis isi websitenya.</span></li><li><span>Masukan revisi tidak perlu diteruskan lewat beberapa orang.</span></li><li><span>Harganya sudah tertulis di depan, dalam dua paket yang sama untuk semua klien.</span></li></ul><p>Kekurangannya juga perlu Anda tahu: satu orang tidak bisa mengerjakan proyek raksasa. Karena itu kami hanya menawarkan dua paket yang jelas batasnya, untuk UMKM dan usaha lokal.</p><h2 id="bekerja-lewat-whatsapp-dan-telepon">Bekerja lewat WhatsApp dan telepon</h2><p>Pemilik usaha biasanya sibuk melayani pelanggan, bukan duduk di depan laptop. Jadi cara kerja kami mengikuti itu.</p><p>Semua dimulai dengan telepon 30 menit di hari pertama, gratis dan tanpa komitmen. Kita bicara tentang usaha Anda, layanan apa yang paling sering ditanyakan pelanggan, dan siapa pelanggan Anda. Kalau ada logo dan foto, kirim saja lewat WhatsApp.</p><p>Anda tidak perlu menyiapkan dokumen panjang atau belajar istilah teknis. Di paket Flagship, cerita Anda di telepon itulah bahan utama teks website. Di paket Launch, teksnya Anda siapkan, kami yang memasangnya.</p><p>Untuk paket Flagship, di hari ke-3 Anda melihat draft. Masukan cukup dikirim lewat WhatsApp dengan kalimat Anda sendiri, dan revisi tidak dibatasi sampai hari ke-6. Di hari ke-7, website live, profil Google Maps dirapikan, dan tombol WhatsApp aktif. Paket Launch live dalam 3 hari kerja dengan 2 kali revisi. Urutan lengkapnya ada di <a href="/#proses">proses kerja</a>.</p><h2 id="melayani-kota-dan-kabupaten-tangerang">Melayani Kota dan Kabupaten Tangerang</h2><p>Kami bekerja dari Gading Serpong, di Kelapa Dua, Kabupaten Tangerang. Kami melayani usaha di Karawaci, Cipondoh, Cikokol, dan Batuceper di Kota Tangerang, juga di Kelapa Dua, Pagedangan, Cisauk, Cikupa, Curug, dan Legok di Kabupaten Tangerang. Di luar Tangerang, kami bekerja dengan klien di seluruh Indonesia. Untuk usaha di ibu kota, ada halaman <a href="/jasa-pembuatan-website-jakarta/">jasa pembuatan website Jakarta</a>.</p><p>Kalau usaha Anda di Serpong, BSD, atau Pamulang, halaman <a href="/jasa-pembuatan-website-tangerang-selatan/">jasa pembuatan website Tangerang Selatan</a> membahas pencarian lokal di sana lebih dalam.</p><p>Ingin melihat hasil kerja nyata? Lihat <a href="/#contoh">contoh website</a> yang kami buat untuk PT. Mutiara Citramulia Teknindo, distributor resmi Pneumax di Indonesia. Ada 9 lini produk, pertanyaan produk langsung lewat WhatsApp, dan dua bahasa.</p><h2 id="paket-dan-harga">Paket dan harga</h2></div><aside class="who" aria-label="Siapa yang mengerjakan"><img src="/assets/ryco-160.webp" alt="" width="64" height="64" loading="lazy" decoding="async"><p><b>Dikerjakan langsung oleh Ryco</b> dari Gading Serpong. Anda bicara dengan orang yang sama dari telepon pertama sampai website live. Melayani usaha di seluruh Indonesia lewat WhatsApp dan telepon, dan bisa bertemu langsung di Jabodetabek. Contoh yang sudah live: <a href="https://pneumaxmct.com" target="_blank" rel="noopener">pneumaxmct.com<span class="sr-only"> (buka tab baru)</span></a>.</p></aside><div class="page-block" id="paket"><div class="prices">
       <article class="price-card on-dark">
         <div class="price-meta">
           <span class="badge">direkomendasikan</span>
@@ -704,7 +721,7 @@ p, li { text-wrap: pretty; }
           <li>Domain .com, hosting, dan SSL tahun pertama termasuk.</li>
         </ul>
         <div class="terms">
-          <p><b>Garansi tepat waktu:</b> setiap telat 1 hari kerja, kami potong Rp500.000 dari pelunasan.</p>
+          <p><b>Garansi tepat waktu:</b> setiap telat 1&nbsp;hari kerja, kami potong Rp500.000 dari pelunasan.</p>
           <p><b>Lunasi setelah puas:</b> 50% di awal, 50% setelah Anda lihat hasilnya dan setuju.</p>
         </div>
       </article>
@@ -720,17 +737,17 @@ p, li { text-wrap: pretty; }
         </div>
         <a class="btn btn-ghost" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya tertarik dengan paket Launch (Rp1.990.000) untuk bisnis saya. Bagaimana langkah selanjutnya?"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pilih Launch<span class="sr-only"> (buka WhatsApp di tab baru)</span></a>
         <ul class="bullets">
-          <li>Landing page 1 halaman, dari template</li>
-          <li>Isi teks Anda yang siapkan, misalnya layanan, harga, jam buka, dan alamat</li>
-          <li>Revisi 2 kali</li>
-          <li>Domain .com, hosting, dan SSL tahun pertama termasuk</li>
-          <li class="no">Tanpa merapikan Google Maps</li>
-          <li class="no">Tanpa halaman khusus layanan andalan</li>
-          <li class="no">Tanpa garansi tepat waktu</li>
+          <li>Landing page 1 halaman, dari template.</li>
+          <li>Isi teks Anda yang siapkan, misalnya layanan, harga, jam buka, dan alamat.</li>
+          <li>Revisi 2 kali.</li>
+          <li>Domain .com, hosting, dan SSL tahun pertama termasuk.</li>
+          <li class="no">Tanpa merapikan Google Maps.</li>
+          <li class="no">Tanpa halaman khusus layanan andalan.</li>
+          <li class="no">Tanpa garansi tepat waktu.</li>
         </ul>
       </article>
     </div>
-    <p class="price-foot">Semua harga sudah termasuk domain, hosting, dan SSL tahun pertama. <a href="/#faq-domain" class="js-open-faq">Lihat biaya mulai tahun kedua</a> · <a href="/harga-pembuatan-website/">Rincian harga dan perbandingan paket</a></p></div><div class="prose"><p>Kalau pelanggan Anda kebanyakan dari sekitar Tangerang dan menemukan Anda lewat peta, paket Flagship lebih pas, karena profil Google Maps ikut dirapikan dan semua teks kami yang menulis. Kalau Anda hanya butuh satu halaman untuk dibagikan di WhatsApp dan Instagram, paket Launch sudah cukup.</p><p>Penjelasan biaya tahun kedua dan apa saja yang tidak termasuk ada di <a href="/harga-pembuatan-website/">harga pembuatan website</a>.</p><div class="page-cta"><p><b>Ingin tanya dulu?</b> Telepon pertama 30 menit, gratis dan tanpa komitmen. Chat dulu juga boleh.</p><a class="btn btn-wa" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya di Tangerang dan ingin ngobrol soal pembuatan website untuk usaha saya."><svg aria-hidden="true"><use href="#i-wa"/></svg>Chat via WhatsApp<span class="sr-only"> (buka tab baru)</span></a></div></div><div class="page-faq faq-grid"><div class="head"><p class="eyebrow">pertanyaan</p><h2 id="faq">Pertanyaan yang sering muncul</h2></div><div class="faq-list"><details><summary><span>Siapa yang saya hubungi selama website dikerjakan?</span><i class="pm" aria-hidden="true"></i></summary><p>Ryco, orang yang sama yang mengerjakan website Anda. Tidak ada perantara. Anda bisa menghubungi lewat WhatsApp di 0897-0058-075 atau email polasatuagency@gmail.com.</p></details><details><summary><span>Usaha saya di Cikupa atau Curug, apakah tetap bisa dilayani?</span><i class="pm" aria-hidden="true"></i></summary><p>Bisa. Cikupa dan Curug ada di Kabupaten Tangerang, masih dalam area yang kami layani. Prosesnya berjalan lewat telepon dan WhatsApp, jadi jarak tidak menjadi masalah.</p></details><details><summary><span>Kapan sebaiknya memilih agensi besar daripada web developer satu orang?</span><i class="pm" aria-hidden="true"></i></summary><p>Kalau Anda butuh sistem yang rumit, banyak fitur khusus, atau tim yang bekerja bersamaan, agensi besar lebih cocok. Untuk website company profile atau landing page usaha lokal, bicara langsung dengan orang yang membangunnya biasanya lebih cepat dan lebih jelas.</p></details><details><summary><span>Kalau saya masih ragu, bisakah telepon dulu tanpa harus membeli?</span><i class="pm" aria-hidden="true"></i></summary><p>Bisa. Telepon pertama 30 menit itu gratis dan tanpa komitmen. Anda boleh memakainya untuk bertanya, lalu memutuskan belakangan.</p></details></div></div></div></section>
+    <p class="price-foot">Semua harga sudah termasuk domain, hosting, dan SSL tahun pertama. <a href="/#faq-domain" class="js-open-faq">Lihat biaya mulai tahun kedua</a> · <a href="/harga-pembuatan-website/">Rincian harga dan perbandingan paket</a></p></div><div class="prose"><p>Kalau pelanggan Anda kebanyakan dari sekitar Tangerang dan menemukan Anda lewat peta, paket Flagship lebih pas, karena profil Google Maps ikut dirapikan dan semua teks kami yang menulis. Kalau Anda hanya butuh satu halaman untuk dibagikan di WhatsApp dan Instagram, paket Launch sudah cukup.</p><p>Penjelasan biaya tahun kedua dan apa saja yang tidak termasuk ada di <a href="/harga-pembuatan-website/">harga pembuatan website</a>.</p><div class="page-cta"><p><b>Ingin tanya dulu?</b> Telepon pertama 30 menit, gratis dan tanpa komitmen. Chat dulu juga boleh.</p><a class="btn btn-wa" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya di Tangerang dan ingin ngobrol soal pembuatan website untuk usaha saya."><svg aria-hidden="true"><use href="#i-wa"/></svg>Chat via WhatsApp<span class="sr-only"> (buka tab baru)</span></a></div></div><div class="page-faq faq-grid"><div class="head"><p class="eyebrow">faq</p><h2 id="faq">Pertanyaan yang sering muncul</h2></div><div class="faq-list"><details><summary><span>Siapa yang saya hubungi selama website dikerjakan?</span><i class="pm" aria-hidden="true"></i></summary><p>Ryco, orang yang sama yang mengerjakan website Anda. Tidak ada perantara. Anda bisa menghubungi lewat WhatsApp di 0897-0058-075 atau email polasatuagency@gmail.com.</p></details><details><summary><span>Usaha saya di Cikupa atau Curug, apakah tetap bisa dilayani?</span><i class="pm" aria-hidden="true"></i></summary><p>Bisa. Cikupa dan Curug ada di Kabupaten Tangerang, masih dalam area yang kami layani. Prosesnya berjalan lewat telepon dan WhatsApp, jadi jarak tidak menjadi masalah.</p></details><details><summary><span>Kapan sebaiknya memilih agensi besar daripada web developer satu orang?</span><i class="pm" aria-hidden="true"></i></summary><p>Kalau Anda butuh sistem yang rumit, banyak fitur khusus, atau tim yang bekerja bersamaan, agensi besar lebih cocok. Untuk website company profile atau landing page usaha lokal, bicara langsung dengan orang yang membangunnya biasanya lebih cepat dan lebih jelas.</p></details><details><summary><span>Kalau saya masih ragu, bisakah telepon dulu tanpa harus membeli?</span><i class="pm" aria-hidden="true"></i></summary><p>Bisa. Telepon pertama 30 menit itu gratis dan tanpa komitmen. Anda boleh memakainya untuk bertanya, lalu memutuskan belakangan.</p></details></div></div></div></section>
 </main>
 
 <!-- PENUTUP + FOOTER -->
@@ -765,7 +782,7 @@ p, li { text-wrap: pretty; }
           <ul>
             <li><a class="js-wa-link" href="https://wa.me/628970058075" target="_blank" rel="noopener">WhatsApp · <span class="js-wa-display">0897-0058-075</span></a></li>
             <li><a href="mailto:polasatuagency@gmail.com">polasatuagency@gmail.com</a></li>
-            <li><a href="https://instagram.com/polasatu.id" target="_blank" rel="noopener">Instagram · @polasatu.id</a></li>
+            <li><a href="https://instagram.com/polasatu.id" target="_blank" rel="noopener">Instagram · @polasatu.id<span class="sr-only"> (buka tab baru)</span></a></li>
           </ul>
         </div>
         <div>
@@ -785,15 +802,15 @@ p, li { text-wrap: pretty; }
             <li><a href="/website-umkm/">Website UMKM</a></li>
             <li><a href="/website-klinik/">Website klinik</a></li>
             <li><a href="/website-restoran/">Website restoran</a></li>
-            <li><a href="/jasa-pembuatan-website-tangerang/">Jasa pembuatan website Tangerang</a></li>
-            <li><a href="/jasa-pembuatan-website-tangerang-selatan/">Jasa pembuatan website Tangerang Selatan</a></li>
-            <li><a href="/jasa-pembuatan-website-jakarta/">Jasa pembuatan website Jakarta</a></li>
+            <li><a href="/jasa-pembuatan-website-tangerang/">Jasa website Tangerang</a></li>
+            <li><a href="/jasa-pembuatan-website-tangerang-selatan/">Jasa website Tangerang Selatan</a></li>
+            <li><a href="/jasa-pembuatan-website-jakarta/">Jasa website Jakarta</a></li>
           </ul>
         </div>
       </div>
       <p class="foot-base">© 2026 Pola Satu. Hak cipta dilindungi.</p>
     </div>
-    <a class="fab js-wa-link" href="https://wa.me/628970058075" target="_blank" rel="noopener" aria-label="Chat WhatsApp dengan Pola Satu"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+    <a class="fab js-wa-link" href="https://wa.me/628970058075" target="_blank" rel="noopener" aria-label="Chat WhatsApp dengan Pola Satu (buka tab baru)"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
   </footer>
 </div>
 
@@ -853,13 +870,22 @@ p, li { text-wrap: pretty; }
     }, { rootMargin: '-45% 0px -50% 0px' });
     ['contoh', 'harga', 'proses', 'faq', 'kontak'].forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
     var fab = $('.fab'), closing = $('.closing'), kontak = $('#kontak'), hero = $('.hero, .page-hero'), hide = { c: false, k: false, h: !!hero };
-    var setFab = function () { var h = hide.c || hide.k || hide.h; fab.classList.toggle('is-hidden', h); fab.inert = h; };
+    var setFab = function () { var h = hide.c || hide.k || hide.h || hide.p; fab.classList.toggle('is-hidden', h); fab.inert = h; };
     if (hero) new IntersectionObserver(function (e) { hide.h = e[0].isIntersecting; if (hide.h) links.forEach(function (a) { a.classList.remove('is-active'); }); setFab(); }).observe(hero);
     var io2 = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { hide[en.target === closing ? 'c' : 'k'] = en.isIntersecting; });
       setFab();
     }, { threshold: 0.15 });
-    if (closing) io2.observe(closing); if (kontak) io2.observe(kontak); setFab();
+    if (closing) io2.observe(closing); if (kontak) io2.observe(kontak);
+    if (window.matchMedia('(max-width: 560px)').matches) {
+      var busy = new Set();
+      var io3 = new IntersectionObserver(function (es) {
+        es.forEach(function (en) { if (en.isIntersecting) busy.add(en.target); else busy.delete(en.target); });
+        hide.p = busy.size > 0; setFab();
+      });
+      $$('.prices, .faq-list, .price-foot, .art-card, .payback').forEach(function (el) { io3.observe(el); });
+    }
+    setFab();
   }
 
   if ($('#brief')) (function () {
@@ -896,8 +922,8 @@ p, li { text-wrap: pretty; }
     var label = copyBtn.textContent;
     var done = function (t) { copyBtn.textContent = t; setTimeout(function () { copyBtn.textContent = label; }, 1600); };
     try {
-      navigator.clipboard.writeText(current.wa).then(function () { done(TXT.copied); announce(TXT.copiedLong); }, function () { selectMsg(); done(TXT.copyFail); });
-    } catch (e) { selectMsg(); done(TXT.copyFail); }
+      navigator.clipboard.writeText(current.wa).then(function () { done(TXT.copied); announce(TXT.copiedLong); }, function () { selectMsg(); done(TXT.copyFail); announce(TXT.copyFail); });
+    } catch (e) { selectMsg(); done(TXT.copyFail); announce(TXT.copyFail); }
   });
 
     build();
@@ -905,7 +931,7 @@ p, li { text-wrap: pretty; }
 
   if ($('#pb-num')) (function () {
   /* kalkulator balik modal */
-  var PRICE = 6990000, pbNum = $('#pb-num'), pbText = $('#pb-text'), pbOther = $('#pb-other');
+  var PRICE = 6990000, pbNum = $('#pb-num'), pbText = $('#pb-text'), pbOther = $('#pb-other'), pbStatus = $('#pb-status'), pbHint = $('#pb-hint'), pbT, pbFirst = true;
   var rp = function (n) { return 'Rp' + n.toLocaleString('id-ID'); };
   /* "Rp 250.000", "250rb", "1,5 jt", "1.500.000,00" -> angka; di luar Rp1.000 s.d. Rp1 triliun dianggap belum valid */
   function parseRp(v) {
@@ -923,10 +949,14 @@ p, li { text-wrap: pretty; }
     var n = Math.ceil(PRICE / avg);
     pbNum.textContent = n.toLocaleString('id-ID');
     pbText.innerHTML = rp(PRICE) + ' ÷ ' + rp(avg) + ' ≈ ' + n.toLocaleString('id-ID') + '. Artinya, belanja dari sekitar <b>' + n.toLocaleString('id-ID') + ' pelanggan</b> sudah setara dengan biaya website paket Flagship.';
+    clearTimeout(pbT);
+    if (pbFirst) pbFirst = false;
+    else pbT = setTimeout(function () { pbStatus.textContent = 'Sekitar ' + n.toLocaleString('id-ID') + ' pelanggan dengan belanja ' + rp(avg) + ' sudah setara dengan biaya website paket Flagship.'; }, 700);
   }
-  $$('input[name="pb"]').forEach(function (r) { r.addEventListener('change', function () { pbOther.value = ''; pbCalc(); }); });
+  $$('input[name="pb"]').forEach(function (r) { r.addEventListener('change', function () { pbOther.value = ''; pbHint.hidden = true; pbCalc(); }); });
   pbOther.addEventListener('input', function () {
     var ok = parseRp(pbOther.value) > 0;
+    pbHint.hidden = ok || !pbOther.value.trim();
     if (ok) $$('input[name="pb"]').forEach(function (r) { r.checked = false; });
     else if (!$('input[name="pb"]:checked')) $('input[name="pb"][value="250000"]').checked = true;
     pbCalc();
