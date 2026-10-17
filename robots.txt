@@ -1,9 +1,22 @@
-# robots.txt for Pola Satu
-# Swap https://polasatu.id for the final domain before launch.
-# AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.) are allowed by the
-# wildcard rule below; see /llms.txt for a plain-text summary.
-
+# robots.txt untuk https://polasatu.id
 User-agent: *
+Allow: /
+
+# Mesin pencari dan asisten jawaban. Sudah tercakup aturan di atas,
+# ditulis eksplisit supaya jelas dan tidak ikut terblokir jika aturan umum berubah.
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://polasatu.id/sitemap.xml
