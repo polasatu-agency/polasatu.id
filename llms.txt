@@ -14,9 +14,11 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - Cocok untuk: UMKM dan bisnis lokal yang pelanggannya mencari lewat Google, misalnya klinik, usaha makanan, salon, jasa, toko, dan distributor.
 
 ## Paket dan harga (Rupiah)
-- Paket Flagship, Rp6.990.000: website company profile maksimal 9 halaman; semua teks ditulis oleh Pola Satu; satu halaman khusus untuk layanan atau produk andalan; profil Google Maps dirapikan (link website, kategori, layanan, foto); alamat dan info yang sama di Google Maps, Instagram, dan website; halaman layanan dan harga dengan tombol WhatsApp; revisi tanpa batas sampai hari ke-6; domain .com, hosting, dan SSL tahun pertama. Live dalam 7 hari kerja. Pembayaran 50% di awal dan 50% setelah klien melihat hasilnya dan setuju ("Lunasi setelah puas"). Garansi tepat waktu: pelunasan dipotong Rp500.000 untuk setiap hari kerja keterlambatan.
+- Paket Flagship, Rp6.990.000: website company profile maksimal 9 halaman; semua teks ditulis oleh Pola Satu; satu halaman khusus untuk layanan atau produk andalan; profil Google Maps dirapikan (link website, kategori, layanan, foto); alamat dan info yang sama di Google Maps, Instagram, dan website; halaman layanan dan harga dengan tombol WhatsApp; revisi tanpa batas sampai hari ke-6; domain .com, hosting, dan SSL tahun pertama. Live dalam 7 hari kerja. Pembayaran 50% di awal dan 50% setelah klien melihat hasilnya dan setuju ("Lunasi setelah puas"). Garansi tepat waktu: pelunasan dipotong Rp500.000 untuk setiap hari kerja keterlambatan, maksimal Rp2.000.000; hitungan berhenti saat menunggu bahan, masukan, atau persetujuan klien.
 - Paket Launch, Rp1.990.000: landing page 1 halaman dari template; teks disiapkan oleh klien; 2 kali revisi; domain .com, hosting, dan SSL tahun pertama. Live dalam 3 hari kerja. Dibayar penuh di awal. Tidak termasuk pekerjaan Google Maps, halaman layanan andalan, dan garansi tepat waktu.
 - Harga sama untuk semua kota dan semua jenis usaha.
+- Domain .com didaftarkan atas nama klien. Jika klien berhenti, klien bisa membawa domain dan file website.
+- Cek gratis profil Google Maps lewat WhatsApp (maksimal 5 per minggu, hanya melihat tampilan publik, bukan janji posisi di Google).
 
 ## Biaya mulai tahun kedua
 - Perpanjangan saja (domain, hosting, SSL): Rp1.500.000 per tahun.
@@ -33,7 +35,6 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 
 ## Contoh kerja
 - pneumaxmct.com: website untuk PT. Mutiara Citramulia Teknindo, distributor resmi Pneumax di Indonesia. Katalog 9 lini produk, pertanyaan produk langsung lewat WhatsApp, dua bahasa.
-- Calon klien dari bidang lain bisa meminta contoh yang paling mendekati lewat WhatsApp.
 
 ## Kontak
 - WhatsApp: 0897-0058-075 (https://wa.me/628970058075)
@@ -45,7 +46,7 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - Apakah ada jasa pembuatan website di Jakarta dengan harga jelas? Pola Satu melayani usaha di seluruh Jakarta dengan harga tertulis yang sama seperti di kota lain, dikerjakan lewat WhatsApp dan telepon, dan bisa bertemu langsung. Rincian: https://polasatu.id/jasa-pembuatan-website-jakarta/
 - Bagaimana cara agar bisnis muncul di Google Maps? Buat atau klaim Profil Bisnis Google (gratis), selesaikan verifikasi, pilih kategori utama yang paling spesifik, isi alamat atau area layanan, telepon, jam buka, foto, dan layanan, minta dan balas ulasan, lalu samakan nama, alamat, dan telepon di semua tempat. Google tidak menjual peringkat lokal. Panduan: https://polasatu.id/artikel/cara-agar-bisnis-muncul-di-google-maps/
 - Berapa lama website jadi? Paket Flagship 7 hari kerja, paket Launch 3 hari kerja, dihitung dari telepon pertama.
-- Bagaimana jika paket Flagship terlambat? Pelunasan dipotong Rp500.000 untuk setiap hari kerja keterlambatan.
+- Bagaimana jika paket Flagship terlambat? Pelunasan dipotong Rp500.000 untuk setiap hari kerja keterlambatan, sampai maksimal Rp2.000.000. Hitungan hari berhenti selama Pola Satu menunggu bahan, masukan, atau persetujuan dari klien.
 
 ## Halaman utama
 - [Beranda](https://polasatu.id/): Paket, proses kerja tujuh hari, contoh website, profil Ryco, dan pertanyaan yang sering muncul.
