@@ -522,6 +522,32 @@ p, li { text-wrap: pretty; }
 .page-body { padding-block: clamp(56px, 7vw, 96px) var(--section-y); background: var(--paper); }
 .page-body { position: relative; overflow: clip; }
 .page-body > .wrap { z-index: 1; }
+.page-split { display: block; }
+.page-side { display: none; }
+@media (min-width: 1100px) {
+  .page-split { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(40px, 5vw, 80px); align-items: start; }
+  .page-side { display: grid; gap: 20px; position: sticky; top: 104px; }
+  .page-main .prices { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: none; }
+  .page-main .price-card { padding: 28px 24px; min-width: 0; }
+  .page-main .price-card .price-num, .page-main .price-card:not(.on-dark) .price-num { font-size: 2.75rem; }
+  .page-main .price-card h3 { font-size: 2.25rem; }
+  .page-main .price-card .btn { width: 100%; justify-content: center; }
+}
+.side-card, .side-toc, .side-cta { background: var(--indigo-tint); border-radius: var(--r-lg); padding: 26px 26px 28px; display: grid; gap: 16px; min-width: 0; }
+.side-card .eyebrow, .side-toc .eyebrow { --pill-bg: var(--indigo); --pill-fg: var(--white); }
+.side-price { font-family: var(--f-head); font-weight: 800; font-size: 2.75rem; line-height: .95; letter-spacing: -0.035em; color: var(--ink); font-variant-numeric: tabular-nums; }
+.side-price .rp { font-size: .4em; letter-spacing: 0; margin-right: 6px; vertical-align: .9em; color: var(--indigo); }
+.side-card .chips { display: grid; gap: 8px; font-size: 0.9375rem; color: var(--ink); }
+.side-card .chips li { color: var(--ink); font-weight: 500; }
+.side-card .btn { justify-self: stretch; }
+.side-link { font-weight: 700; font-size: 0.9375rem; color: var(--indigo); text-decoration: underline; text-underline-offset: 3px; }
+.side-toc ol { display: grid; gap: 2px; counter-reset: s; }
+.side-toc li { counter-increment: s; }
+.side-toc a { display: grid; grid-template-columns: 30px 1fr; align-items: baseline; padding-block: 9px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.9375rem; line-height: 1.4; }
+.side-toc a::before { content: counter(s, decimal-leading-zero); font: 800 var(--fs-label)/1 var(--f-head); color: var(--indigo); }
+.side-toc a:hover { color: var(--indigo); text-decoration: underline; text-underline-offset: 3px; }
+.side-cta { background: var(--indigo); color: var(--white); }
+.side-cta p { font-weight: 700; line-height: 1.4; }
 .prose { max-width: 42rem; display: block; font-size: 1.125rem; }
 .prose > * + * { margin-top: 22px; }
 .prose > h2 { font-size: clamp(1.875rem, 1.3rem + 1.9vw, 3rem); line-height: 1.06; letter-spacing: -0.022em; color: var(--indigo); margin-top: clamp(56px, 7vw, 88px); }
