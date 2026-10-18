@@ -1,6 +1,6 @@
 # Pola Satu
 
-> Pola Satu adalah jasa pembuatan website untuk UMKM dan bisnis lokal di seluruh Indonesia, dijalankan oleh satu orang, Ryco, dari Gading Serpong (Kelapa Dua, Kabupaten Tangerang, Banten). Ada dua paket dengan harga tetap: paket Launch Rp1.990.000 (landing page 1 halaman, live 3 hari kerja) dan paket Flagship Rp6.990.000 (website company profile maksimal 9 halaman, teks ditulis oleh Pola Satu, profil Google Maps dirapikan, live 7 hari kerja). Domain .com, hosting, dan SSL tahun pertama termasuk di kedua paket.
+> Pola Satu adalah jasa pembuatan website untuk UMKM dan bisnis lokal di seluruh Indonesia, dijalankan oleh satu orang, Ryco, dari Tangerang (Banten). Ada dua paket dengan harga tetap: paket Launch Rp1.990.000 (landing page 1 halaman, live 3 hari kerja) dan paket Flagship Rp6.990.000 (website company profile maksimal 9 halaman, teks ditulis oleh Pola Satu, profil Google Maps dirapikan, live 7 hari kerja). Domain .com, hosting, dan SSL tahun pertama termasuk di kedua paket.
 
 Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir diperbarui: 17 Oktober 2026.
 
@@ -9,7 +9,7 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - Jenis usaha: jasa pembuatan website untuk UMKM dan bisnis lokal yang bagus tetapi sulit ditemukan pelanggan di Google dan Google Maps.
 - Dijalankan oleh: Ryco, pendiri Pola Satu, lulusan manajemen dengan konsentrasi branding dari Universitas Prasetiya Mulya. Klien berbicara langsung dengan Ryco dari telepon pertama sampai website live.
 - Alasan berdiri: banyak usaha kecil yang bagus di Indonesia berjuang sendiri. Orang perlu tahu sebuah usaha ada sebelum membeli, jadi Pola Satu mulai dari tempat pertama orang mencari, yaitu Google.
-- Lokasi: Gading Serpong, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten.
+- Lokasi: Tangerang, Banten.
 - Area layanan: seluruh Indonesia lewat WhatsApp dan telepon. Bertemu langsung bisa diatur di Jabodetabek, termasuk Jakarta, Kota Tangerang, Kabupaten Tangerang, dan Tangerang Selatan (Serpong, BSD, Pamulang, Ciputat, Pondok Aren, Bintaro, Alam Sutera).
 - Cocok untuk: UMKM dan bisnis lokal yang pelanggannya mencari lewat Google, misalnya klinik, usaha makanan, salon, jasa, toko, dan distributor.
 
@@ -54,8 +54,8 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 
 ## Halaman per kota
 - [Jasa pembuatan website Jakarta untuk usaha yang bersaing di Google Maps](https://polasatu.id/jasa-pembuatan-website-jakarta/): Jasa pembuatan website Jakarta dengan harga jelas: paket Launch Rp1.990.000, paket Flagship Rp6.990.000 sudah termasuk merapikan Google Maps.
-- [Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya](https://polasatu.id/jasa-pembuatan-website-tangerang/): Jasa pembuatan website Tangerang dari web developer lokal di Gading Serpong. Anda bicara langsung dengan orang yang membuatnya, lewat WhatsApp atau telepon.
-- [Jasa pembuatan website Tangerang Selatan untuk usaha yang ingin ditemukan](https://polasatu.id/jasa-pembuatan-website-tangerang-selatan/): Jasa pembuatan website Tangerang Selatan untuk usaha di Serpong, BSD, Pamulang, Ciputat, dan Bintaro. Dikerjakan langsung oleh Ryco dari Gading Serpong.
+- [Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya](https://polasatu.id/jasa-pembuatan-website-tangerang/): Jasa pembuatan website Tangerang dari web developer lokal. Anda bicara langsung dengan orang yang membuatnya, lewat WhatsApp atau telepon.
+- [Jasa pembuatan website Tangerang Selatan untuk usaha yang ingin ditemukan](https://polasatu.id/jasa-pembuatan-website-tangerang-selatan/): Jasa pembuatan website Tangerang Selatan untuk usaha di Serpong, BSD, Pamulang, Ciputat, dan Bintaro. Dikerjakan langsung oleh Ryco dari Tangerang.
 
 ## Halaman per jenis usaha
 - [Website klinik yang jelas, dari layanan sampai jadwal praktik](https://polasatu.id/website-klinik/): Website klinik kecantikan, gigi, atau pratama yang jelas: layanan dan harga, jadwal praktik, lokasi di Google Maps, dan booking lewat WhatsApp.
