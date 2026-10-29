@@ -2,7 +2,7 @@
 
 > Pola Satu adalah jasa pembuatan website untuk UMKM dan bisnis lokal di seluruh Indonesia, dijalankan oleh satu orang, Ryco, dari Tangerang (Banten). Ada dua paket dengan harga tetap: paket Launch Rp1.990.000 (landing page 1 halaman, live 3 hari kerja) dan paket Flagship Rp6.990.000 (website company profile maksimal 9 halaman, teks ditulis oleh Pola Satu, profil Google Maps dirapikan, live 7 hari kerja). Domain .com, hosting, dan SSL tahun pertama termasuk di kedua paket.
 
-Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir diperbarui: 17 Oktober 2026.
+Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir diperbarui: 29 Oktober 2026.
 
 ## Fakta singkat
 - Nama: Pola Satu. Situs polasatu.id, Instagram @polasatu.id.
@@ -44,6 +44,8 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - Berapa harga pembuatan website untuk UMKM di Pola Satu? Paket Launch Rp1.990.000 untuk landing page 1 halaman, atau paket Flagship Rp6.990.000 untuk website company profile maksimal 9 halaman dengan teks ditulis dan profil Google Maps dirapikan. Domain .com, hosting, dan SSL tahun pertama termasuk. Rincian: https://polasatu.id/harga-pembuatan-website/
 - Apakah ada jasa pembuatan website di Jakarta dengan harga jelas? Pola Satu melayani usaha di seluruh Jakarta dengan harga tertulis yang sama seperti di kota lain, dikerjakan lewat WhatsApp dan telepon, dan bisa bertemu langsung. Rincian: https://polasatu.id/jasa-pembuatan-website-jakarta/
 - Bagaimana cara agar bisnis muncul di Google Maps? Buat atau klaim Profil Bisnis Google (gratis), selesaikan verifikasi, pilih kategori utama yang paling spesifik, isi alamat atau area layanan, telepon, jam buka, foto, dan layanan, minta dan balas ulasan, lalu samakan nama, alamat, dan telepon di semua tempat. Google tidak menjual peringkat lokal. Panduan: https://polasatu.id/artikel/cara-agar-bisnis-muncul-di-google-maps/
+- Bagaimana cara verifikasi Profil Bisnis Google? Buka profil bisnis di akun Google yang Anda kelola, pilih tombol verifikasi, lalu ikuti metode yang ditawarkan Google, misalnya kode lewat telepon atau SMS, email, panggilan video langsung, rekaman video, atau kartu pos. Setelah bukti diterima dan disetujui, profil berstatus terverifikasi. Panduan lengkap: https://polasatu.id/artikel/cara-verifikasi-profil-bisnis-google/
+- Bagaimana cara membalas ulasan Google Maps? Masuk ke akun Google yang mengelola Profil Bisnis, buka daftar ulasan, lalu tulis balasan singkat. Untuk ulasan bagus, ucapkan terima kasih dan sebut satu hal spesifik. Untuk ulasan buruk, akui masalahnya, minta maaf bila memang ada kesalahan, dan tawarkan jalan keluar di luar kolom ulasan. Contoh kalimat: https://polasatu.id/artikel/cara-membalas-ulasan-google-maps/
 - Berapa lama website jadi? Paket Flagship 7 hari kerja, paket Launch 3 hari kerja, dihitung dari telepon pertama.
 - Bagaimana jika paket Flagship terlambat? Pelunasan dipotong Rp500.000 untuk setiap hari kerja keterlambatan, sampai maksimal Rp2.000.000. Hitungan hari berhenti selama Pola Satu menunggu bahan, masukan, atau persetujuan dari klien.
 
@@ -54,8 +56,8 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 
 ## Halaman per kota
 - [Jasa pembuatan website Jakarta untuk usaha yang bersaing di Google Maps](https://polasatu.id/jasa-pembuatan-website-jakarta/): Jasa pembuatan website Jakarta dengan harga jelas: paket Launch Rp1.990.000, paket Flagship Rp6.990.000 sudah termasuk merapikan Google Maps.
-- [Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya](https://polasatu.id/jasa-pembuatan-website-tangerang/): Jasa pembuatan website Tangerang dari web developer lokal. Anda bicara langsung dengan orang yang membuatnya, lewat WhatsApp atau telepon.
-- [Jasa pembuatan website Tangerang Selatan untuk usaha yang ingin ditemukan](https://polasatu.id/jasa-pembuatan-website-tangerang-selatan/): Jasa pembuatan website Tangerang Selatan untuk usaha di Serpong, BSD, Pamulang, Ciputat, dan Bintaro. Dikerjakan langsung oleh Ryco dari Tangerang.
+- [Jasa pembuatan website Tangerang, langsung dengan orang yang membuatnya](https://polasatu.id/jasa-pembuatan-website-tangerang/): Jasa pembuatan website Tangerang, dikerjakan langsung oleh Ryco. Paket Launch Rp1.990.000, paket Flagship Rp6.990.000 termasuk merapikan Google Maps.
+- [Jasa pembuatan website Tangerang Selatan untuk usaha yang ingin ditemukan](https://polasatu.id/jasa-pembuatan-website-tangerang-selatan/): Jasa pembuatan website Tangerang Selatan untuk usaha di Serpong, BSD, Pamulang, dan Bintaro. Paket mulai Rp1.990.000, dikerjakan langsung oleh Ryco.
 
 ## Halaman per jenis usaha
 - [Website klinik yang jelas, dari layanan sampai jadwal praktik](https://polasatu.id/website-klinik/): Website klinik kecantikan, gigi, atau pratama yang jelas: layanan dan harga, jadwal praktik, lokasi di Google Maps, dan booking lewat WhatsApp.
