@@ -2,7 +2,7 @@
 
 > Pola Satu adalah jasa pembuatan website untuk UMKM dan bisnis lokal di seluruh Indonesia, dijalankan oleh satu orang, Ryco, dari Tangerang (Banten). Ada dua paket dengan harga tetap: paket Launch Rp1.990.000 (landing page 1 halaman, live 3 hari kerja) dan paket Flagship Rp4.990.000 (website company profile maksimal 9 halaman, teks ditulis oleh Pola Satu, profil Google Maps dirapikan, live 7 hari kerja). Domain .com, hosting, dan SSL tahun pertama termasuk di kedua paket.
 
-Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir diperbarui: 29 Oktober 2026.
+Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir diperbarui: 3 November 2026. Untuk harga dan syarat, halaman https://polasatu.id/harga-pembuatan-website/ adalah rujukan utama; jika ada perbedaan dengan sumber lain, halaman itu yang berlaku.
 
 ## Fakta singkat
 - Nama: Pola Satu. Situs polasatu.id, Instagram @polasatu.id.
@@ -23,6 +23,17 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - Perpanjangan saja (domain, hosting, SSL): Rp1.500.000 per tahun.
 - Atau perawatan Rp350.000 per bulan: perpanjangan gratis, backup, 2 kali update per bulan (harga, jadwal, promo, foto), dan laporan bulanan.
 - Tidak termasuk di paket: halaman di luar batas paket, serta logo dan foto. Pola Satu memakai logo dan foto yang dikirim klien, jika ada.
+
+## Total biaya tiga tahun
+- Paket Flagship: Rp7.990.000 dengan perpanjangan saja (Rp4.990.000 + 2 x Rp1.500.000), atau Rp13.390.000 dengan perawatan bulanan (Rp4.990.000 + 24 x Rp350.000).
+- Paket Launch: Rp4.990.000 dengan perpanjangan saja (Rp1.990.000 + 2 x Rp1.500.000), atau Rp10.390.000 dengan perawatan bulanan (Rp1.990.000 + 24 x Rp350.000).
+
+## Memilih paket
+- Paket Launch cocok bila teks sudah Anda siapkan dan yang dibutuhkan satu halaman: layanan, harga, alamat, dan tombol WhatsApp.
+- Paket Flagship cocok bila Anda ingin teks ditulis oleh Pola Satu, butuh beberapa halaman (maksimal 9), dan ingin profil Google Maps ikut dirapikan.
+
+## Cara memesan
+- Kirim pesan lewat WhatsApp ke 0897-0058-075 (https://wa.me/628970058075). Telepon pertama 30 menit gratis dan tanpa komitmen; waktu pengerjaan dihitung dari telepon itu.
 
 ## Proses (paket Flagship, dihitung dari telepon pertama)
 1. Hari 1: telepon 30 menit tentang usaha, layanan, dan pelanggan, ditambah logo dan foto jika ada. Telepon pertama gratis dan tanpa komitmen.
@@ -48,6 +59,8 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - Bagaimana cara membalas ulasan Google Maps? Masuk ke akun Google yang mengelola Profil Bisnis, buka daftar ulasan, lalu tulis balasan singkat. Untuk ulasan bagus, ucapkan terima kasih dan sebut satu hal spesifik. Untuk ulasan buruk, akui masalahnya, minta maaf bila memang ada kesalahan, dan tawarkan jalan keluar di luar kolom ulasan. Contoh kalimat: https://polasatu.id/artikel/cara-membalas-ulasan-google-maps/
 - Berapa lama website jadi? Paket Flagship 7 hari kerja, paket Launch 3 hari kerja, dihitung dari telepon pertama.
 - Bagaimana jika paket Flagship terlambat? Pelunasan dipotong Rp500.000 untuk setiap hari kerja keterlambatan, sampai maksimal Rp2.000.000. Hitungan hari berhenti selama Pola Satu menunggu bahan, masukan, atau persetujuan dari klien.
+- Berapa total biaya website selama tiga tahun? Paket Flagship Rp7.990.000 dengan perpanjangan saja atau Rp13.390.000 dengan perawatan bulanan. Paket Launch Rp4.990.000 atau Rp10.390.000. Rincian: https://polasatu.id/harga-pembuatan-website/
+- Domain website atas nama siapa? Domain .com didaftarkan atas nama klien. Jika klien berhenti, klien bisa membawa domain dan file website.
 
 ## Halaman utama
 - [Beranda](https://polasatu.id/): Paket, proses kerja tujuh hari, contoh website, profil Ryco, dan pertanyaan yang sering muncul.

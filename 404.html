@@ -371,6 +371,8 @@ main:focus { outline: none; }
 .field { display: grid; gap: 10px; min-width: 0; }
 .field > label { font-weight: 800; font-size: 1rem; }
 .opt { font-weight: 500; color: var(--muted); }
+select { width: 100%; min-height: 54px; padding: 13px 16px; border: 2px solid var(--ink); border-radius: var(--r-sm); background: var(--white); color: var(--ink); font: 500 1rem/1.4 var(--f-body); }
+select:focus-visible { outline: 3px solid var(--indigo); outline-offset: 2px; }
 input[type="text"], textarea { width: 100%; min-height: 54px; padding: 13px 16px; border: 2px solid var(--ink); border-radius: var(--r-sm); background: var(--white); color: var(--ink); font: 500 1rem/1.4 var(--f-body); transition: box-shadow var(--dur-fast), transform var(--dur-base) var(--ease-out); }
 textarea { min-height: 150px; resize: vertical; line-height: 1.55; }
 input::placeholder, textarea::placeholder { color: var(--muted); }
@@ -716,6 +718,7 @@ p, li { text-wrap: pretty; }
             <li><a href="/#contoh">Contoh</a></li>
             <li><a href="/#proses">Proses</a></li>
             <li><a href="/#harga">Harga</a></li>
+            <li><a href="/harga-pembuatan-website/">Rincian harga</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/artikel/">Artikel</a></li>
           </ul>
@@ -737,8 +740,8 @@ p, li { text-wrap: pretty; }
   };
   var TXT = {
     greet: 'Halo Pola Satu, saya ingin tanya soal website untuk bisnis saya.',
-    wa: 'Halo Pola Satu, {who} Yang ingin saya perbaiki: {pesan} Boleh kita jadwalkan telepon 30 menit?',
-    mail: 'Halo Pola Satu,\n\n{whoCap}\n\nYang ingin saya perbaiki:\n{pesan}\n\nBoleh kita jadwalkan telepon 30 menit?\n\nTerima kasih{sign}',
+    wa: 'Halo Pola Satu, {who} Yang ingin saya perbaiki: {pesan}{sumber} Boleh kita jadwalkan telepon 30 menit?',
+    mail: 'Halo Pola Satu,\n\n{whoCap}\n\nYang ingin saya perbaiki:\n{pesan}{sumberMail}\n\nBoleh kita jadwalkan telepon 30 menit?\n\nTerima kasih{sign}',
     empty: 'nanti saya jelaskan langsung',
     copied: 'Tersalin', copyFail: 'Teks sudah dipilih, tekan Ctrl/Cmd+C',
     updated: 'Pesan diperbarui', copiedLong: 'Pesan tersalin'
@@ -826,7 +829,7 @@ p, li { text-wrap: pretty; }
   /* form kontak: menyusun pesan WhatsApp dan email */
   var form = $('#brief'), out = $('#msg'), status = $('#msg-status');
   var sendWa = $('#send-wa'), sendMail = $('#send-mail');
-  var fNama = $('#f-nama'), fBisnis = $('#f-bisnis'), fPesan = $('#f-pesan');
+  var fNama = $('#f-nama'), fBisnis = $('#f-bisnis'), fPesan = $('#f-pesan'), fSumber = $('#f-sumber');
   var current = { wa: '', mail: '', subject: '' }, stT;
   function fill(tpl, v) { return tpl.replace(/\{(\w+)\}/g, function (_, k) { return v[k]; }); }
   function announce(t) { status.textContent = ''; setTimeout(function () { status.textContent = t; }, 50); }
@@ -837,6 +840,8 @@ p, li { text-wrap: pretty; }
       who: who,
       whoCap: who.charAt(0).toUpperCase() + who.slice(1),
       sign: nama ? ',\n' + nama : '.',
+      sumber: fSumber.value ? ' Saya tahu Pola Satu dari ' + fSumber.value + '.' : '',
+      sumberMail: fSumber.value ? '\n\nSaya tahu Pola Satu dari ' + fSumber.value + '.' : '',
       pesan: (function (t) { t = t || TXT.empty; return /[.?!]$/.test(t) ? t : t + '.'; })(fPesan.value.trim())
     };
     current.wa = fill(TXT.wa, v);
