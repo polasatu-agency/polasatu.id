@@ -65,6 +65,7 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 ## Halaman utama
 - [Beranda](https://polasatu.id/): Paket, proses kerja tujuh hari, contoh website, profil Ryco, dan pertanyaan yang sering muncul.
 - [Harga pembuatan website: apa yang menentukan dan berapa di Pola Satu](https://polasatu.id/harga-pembuatan-website/): Harga pembuatan website di Pola Satu: paket Launch Rp1.990.000, paket Flagship Rp4.990.000, domain dan hosting tahun pertama termasuk. Ini rinciannya.
+- [Jasa pembuatan website company profile: isinya apa saja dan berapa biayanya](https://polasatu.id/jasa-pembuatan-website-company-profile/): Jasa pembuatan website company profile maksimal 9 halaman, teks kami tulis, profil Google Maps dirapikan. Paket Flagship Rp4.990.000, live 7 hari kerja.
 - [Website UMKM: kenapa perlu, apa isinya, dan cara memulainya](https://polasatu.id/website-umkm/): Website UMKM untuk usaha yang belum punya website: manfaat, isi yang dibutuhkan, dan biayanya, mulai paket Launch Rp1.990.000 atau paket Flagship.
 
 ## Halaman per kota
@@ -73,6 +74,7 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - [Jasa pembuatan website Tangerang Selatan untuk usaha yang ingin ditemukan](https://polasatu.id/jasa-pembuatan-website-tangerang-selatan/): Jasa pembuatan website Tangerang Selatan untuk usaha di Serpong, BSD, Pamulang, dan Bintaro. Paket mulai Rp1.990.000, dikerjakan langsung oleh Ryco.
 
 ## Halaman per jenis usaha
+- [Website bengkel mobil dan motor: dari daftar servis sampai lokasi di peta](https://polasatu.id/website-bengkel/): Website bengkel mobil atau motor: layanan dan harga servis, jam buka, lokasi di Google Maps, dan booking lewat WhatsApp. Apa yang perlu ada dan biayanya.
 - [Website klinik yang jelas, dari layanan sampai jadwal praktik](https://polasatu.id/website-klinik/): Website klinik kecantikan, gigi, atau pratama yang jelas: layanan dan harga, jadwal praktik, lokasi di Google Maps, dan booking lewat WhatsApp.
 - [Website restoran sederhana untuk usaha makanan](https://polasatu.id/website-restoran/): Website restoran untuk usaha makanan: menu dan harga, foto, jam buka, lokasi, dan pesan lewat WhatsApp. Kapan paket Launch cukup, kapan paket Flagship.
 
@@ -81,6 +83,7 @@ Situs resmi: https://polasatu.id. Semua halaman berbahasa Indonesia. Terakhir di
 - [Cara agar bisnis Anda muncul di Google Maps](https://polasatu.id/artikel/cara-agar-bisnis-muncul-di-google-maps/): Profil Bisnis Google itu gratis. Panduan membuat, memverifikasi, dan mengisi profil agar bisnis Anda lebih mudah muncul di Google Maps dan pencarian Google.
 - [Cara membalas ulasan Google Maps, yang bagus dan yang buruk](https://polasatu.id/artikel/cara-membalas-ulasan-google-maps/): Cara membalas ulasan Google Maps untuk usaha kecil: kerangka balasan, contoh kalimat untuk ulasan bagus dan buruk, serta hal yang sebaiknya dihindari.
 - [Cara verifikasi Profil Bisnis Google, dan apa yang dilakukan kalau gagal](https://polasatu.id/artikel/cara-verifikasi-profil-bisnis-google/): Cara verifikasi Profil Bisnis Google untuk usaha kecil: persiapan, pilihan metode, kesalahan yang sering terjadi, dan jalan keluar jika verifikasi gagal.
+- [Perbedaan landing page dan website company profile, dan cara memilihnya](https://polasatu.id/artikel/landing-page-atau-company-profile/): Apa bedanya landing page dan website company profile, kapan satu halaman cukup, dan kapan usaha perlu beberapa halaman. Panduan memilih untuk usaha kecil.
 - [Bikin website gratis atau berbayar: mana yang cocok untuk usaha Anda](https://polasatu.id/artikel/website-gratis-vs-berbayar/): Bikin website gratis atau bayar orang? Perbandingan soal alamat, iklan, waktu, kepemilikan, dan peluang ditemukan di Google, plus kapan gratis sudah cukup.
 
 ## Optional
