@@ -804,10 +804,10 @@ p, li { text-wrap: pretty; }
         <h3>Flagship</h3>
         <div class="price-block">
           <p class="price-pre">50% di awal · lunasi setelah puas</p>
-          <p class="price-num"><span class="rp">Rp</span>6.990.000</p>
+          <p class="price-num"><span class="rp">Rp</span>4.990.000</p>
         </div>
         <p class="price-for">Cocok kalau Anda ingin semua teks ditulis dan profil Google Maps ikut dirapikan.</p>
-        <a class="btn btn-light" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya tertarik dengan paket Flagship (Rp6.990.000) untuk bisnis saya. Boleh kita jadwalkan telepon 30 menit?"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pilih Flagship<span class="sr-only"> (buka WhatsApp di tab baru)</span></a>
+        <a class="btn btn-light" href="https://wa.me/628970058075" target="_blank" rel="noopener" data-wa-text="Halo Pola Satu, saya tertarik dengan paket Flagship (Rp4.990.000) untuk bisnis saya. Boleh kita jadwalkan telepon 30 menit?"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pilih Flagship<span class="sr-only"> (buka WhatsApp di tab baru)</span></a>
         <ul class="bullets">
           <li>Website company profile maksimal 9 halaman. Kami yang tulis semua isinya.</li>
           <li>Satu halaman khusus untuk layanan atau produk andalan Anda.</li>
@@ -851,7 +851,7 @@ p, li { text-wrap: pretty; }
     <div class="payback">
       <div class="payback-head">
         <h3 class="eyebrow">hitungan balik modal</h3>
-        <p class="promise-big"><b id="pb-num">28</b><span>pelanggan</span></p>
+        <p class="promise-big"><b id="pb-num">20</b><span>pelanggan</span></p>
       </div>
       <div class="payback-body">
         <fieldset class="pb-field">
@@ -864,7 +864,7 @@ p, li { text-wrap: pretty; }
           </div>
         </fieldset>
         <p class="pb-hint" id="pb-hint" hidden>Isi angka minimal Rp1.000, misalnya 150000 atau 150rb.</p>
-        <p class="calc" id="pb-text">Rp6.990.000 ÷ Rp250.000 ≈ 28. Artinya, belanja dari sekitar <b>28 pelanggan</b> sudah setara dengan biaya website paket Flagship.</p>
+        <p class="calc" id="pb-text">Rp4.990.000 ÷ Rp250.000 ≈ 20. Artinya, belanja dari sekitar <b>20 pelanggan</b> sudah setara dengan biaya website paket Flagship.</p>
         <p class="sr-only" role="status" id="pb-status"></p>
         <p class="disclaimer">Ilustrasi memakai omzet, bukan laba bersih, dan bukan janji jumlah pelanggan.</p>
       </div>
@@ -881,7 +881,7 @@ p, li { text-wrap: pretty; }
     </div>
     <div class="faq-list">
       <details><summary><span>Bisnis apa saja yang cocok?</span><i class="pm" aria-hidden="true"></i></summary><p>Semua UMKM dan bisnis lokal yang pelanggannya mencari lewat Google: klinik, restoran dan kafe, salon, jasa, toko, sampai distributor. Ada penjelasan khusus untuk <a href="/website-klinik/">website klinik</a>, <a href="/website-restoran/">website restoran</a>, dan <a href="/website-umkm/">website UMKM</a> yang baru mulai.</p></details>
-      <details><summary><span>Berapa harga paketnya?</span><i class="pm" aria-hidden="true"></i></summary><p>Paket Launch (landing page 1 halaman) Rp1.990.000, dan paket Flagship (website company profile maksimal 9 halaman) Rp6.990.000. Keduanya sudah termasuk domain .com, hosting, dan SSL tahun pertama. Rincian lengkapnya ada di halaman <a href="/harga-pembuatan-website/">harga pembuatan website</a>.</p></details>
+      <details><summary><span>Berapa harga paketnya?</span><i class="pm" aria-hidden="true"></i></summary><p>Paket Launch (landing page 1 halaman) Rp1.990.000, dan paket Flagship (website company profile maksimal 9 halaman) Rp4.990.000. Keduanya sudah termasuk domain .com, hosting, dan SSL tahun pertama. Rincian lengkapnya ada di halaman <a href="/harga-pembuatan-website/">harga pembuatan website</a>.</p></details>
       <details><summary><span>Berapa lama sampai website live?</span><i class="pm" aria-hidden="true"></i></summary><p>Paket Flagship 7 hari kerja, paket Launch 3 hari kerja, dihitung dari telepon pertama.</p></details>
       <details><summary><span>Bagaimana kalau telat?</span><i class="pm" aria-hidden="true"></i></summary><p>Untuk paket Flagship, setiap telat 1 hari kerja, kami potong Rp500.000 dari pelunasan, sampai maksimal Rp2.000.000. Hitungan hari berhenti selama kami menunggu bahan, masukan, atau persetujuan dari Anda. Paket Launch tanpa garansi tepat waktu.</p></details>
       <details><summary><span>Kapan saya bayar?</span><i class="pm" aria-hidden="true"></i></summary><p>Paket Flagship: 50% di awal, 50% setelah Anda lihat hasilnya dan setuju. Paket Launch: bayar penuh di awal.</p></details>
@@ -1139,7 +1139,7 @@ p, li { text-wrap: pretty; }
 
   if ($('#pb-num')) (function () {
   /* kalkulator balik modal */
-  var PRICE = 6990000, pbNum = $('#pb-num'), pbText = $('#pb-text'), pbOther = $('#pb-other'), pbStatus = $('#pb-status'), pbHint = $('#pb-hint'), pbT, pbFirst = true;
+  var PRICE = 4990000, pbNum = $('#pb-num'), pbText = $('#pb-text'), pbOther = $('#pb-other'), pbStatus = $('#pb-status'), pbHint = $('#pb-hint'), pbT, pbFirst = true;
   var rp = function (n) { return 'Rp' + n.toLocaleString('id-ID'); };
   /* "Rp 250.000", "250rb", "1,5 jt", "1.500.000,00" -> angka; di luar Rp1.000 s.d. Rp1 triliun dianggap belum valid */
   function parseRp(v) {
@@ -1229,7 +1229,7 @@ p, li { text-wrap: pretty; }
       "sameAs": [
         "https://instagram.com/polasatu.id"
       ],
-      "priceRange": "Rp1.990.000 - Rp6.990.000",
+      "priceRange": "Rp1.990.000 - Rp4.990.000",
       "currenciesAccepted": "IDR",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -1239,7 +1239,7 @@ p, li { text-wrap: pretty; }
             "@type": "Offer",
             "name": "Flagship",
             "description": "Website company profile maksimal 9 halaman dengan isi ditulis untuk Anda, halaman layanan andalan, merapikan profil Google Maps, tombol WhatsApp, revisi tanpa batas sampai hari ke-6. Live 7 hari kerja, domain .com, hosting dan SSL tahun pertama termasuk.",
-            "price": "6990000",
+            "price": "4990000",
             "priceCurrency": "IDR",
             "url": "https://polasatu.id/harga-pembuatan-website/",
             "itemOffered": {
@@ -1299,7 +1299,7 @@ p, li { text-wrap: pretty; }
    "name": "Berapa harga paketnya?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Paket Launch (landing page 1 halaman) Rp1.990.000, dan paket Flagship (website company profile maksimal 9 halaman) Rp6.990.000. Keduanya sudah termasuk domain .com, hosting, dan SSL tahun pertama. Rincian lengkapnya ada di halaman harga pembuatan website."
+    "text": "Paket Launch (landing page 1 halaman) Rp1.990.000, dan paket Flagship (website company profile maksimal 9 halaman) Rp4.990.000. Keduanya sudah termasuk domain .com, hosting, dan SSL tahun pertama. Rincian lengkapnya ada di halaman harga pembuatan website."
    }
   },
   {
