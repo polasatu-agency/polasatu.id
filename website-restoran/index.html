@@ -616,7 +616,7 @@ footer { position: relative; z-index: 1; background: var(--ground-2); color: var
 .prose strong { font-weight: 600; }
 .hbody .bullets, .hbody ol, .hbody ul { max-width: 58ch; }
 .plans { display: grid; gap: 28px; justify-items: start; }
-.plan h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; font: 300 var(--fs-h3)/1.1 var(--f-head); }
+.plan h3 { margin-top: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; font: 300 var(--fs-h3)/1.1 var(--f-head); }
 .plan h3 b { font: 300 var(--fs-h2)/1 var(--f-head); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .plan + .plan h3 b { font-size: var(--fs-h3); }
 .plan p { margin-top: 8px; }
@@ -677,6 +677,21 @@ footer { position: relative; z-index: 1; background: var(--ground-2); color: var
 
 /* phone: one column, one filled action, big targets */
 @media (max-width: 700px) {
+  .price-card { padding: 20px; gap: 16px; }
+  .price-card .bullets { gap: 10px; padding-top: 0; }
+  .price-card .bullets li:nth-child(n+4) { display: none; }
+  .price-for { font-size: var(--fs-small); }
+  .plan + .plan h3 b { font-size: var(--fs-h2); }
+  .plan p { margin-top: 6px; }
+  .plans { gap: 22px; }
+  .foot { gap: 24px; }
+  .foot-links { gap: 20px 24px; }
+  .foot a { display: flex; align-items: center; min-height: 44px; padding-block: 0; }
+  .foot .lockup { min-height: 0; }
+  .foot-base { margin-top: 28px; }
+  .case-shot { overflow: hidden; padding: 8px; }
+  .case-shot img { width: 200%; max-width: none; margin-left: -2%; }
+  .case-shot { max-height: 262px; }
   .btn { width: 100%; min-height: 56px; }
   .cta-row { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 6px; width: 100%; }
   .btn-ghost { width: auto; justify-content: flex-start; min-height: 48px; }
